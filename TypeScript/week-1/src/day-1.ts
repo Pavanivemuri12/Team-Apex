@@ -51,3 +51,6 @@ function calculateTax(income: number ,taxYear=2022): number{ //should declare it
     return income * 3;
 }
 console.log(calculateTax(10000));
+
+
+

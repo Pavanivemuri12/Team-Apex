@@ -29,4 +29,4 @@ function calculateTax(income, taxYear = 2022) {
     return income * 3;
 }
 console.log(calculateTax(10000));
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=day-1.js.map
