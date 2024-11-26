@@ -1,6 +1,6 @@
 Output:
 
-![Screenshot 2024-11-27 011238](https://github.com/user-attachments/assets/2adabdba-cf11-44c8-bd58-f2bdb41a983b)
+   ![Screenshot 2024-11-27 011238](https://github.com/user-attachments/assets/2adabdba-cf11-44c8-bd58-f2bdb41a983b)
 
 
 
