@@ -2,6 +2,9 @@ Output:
 
   ![Screenshot 2024-11-27 011616](https://github.com/user-attachments/assets/66811210-0573-4d7a-b137-634eab5b941e)
 
+after styling...output:
+
+![Screenshot 2024-11-27 223545](https://github.com/user-attachments/assets/a1799824-0920-4953-9aad-40c803f8b6d3)
 
 
 
