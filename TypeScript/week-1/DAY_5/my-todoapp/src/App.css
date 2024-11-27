@@ -1,6 +1,3 @@
-.todo-form {
-  margin-left: 20px; /* Adjust the value to move the form further right */
-}
-.App{
-  margin-left: 20px; 
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -25,11 +25,18 @@ function App() {
   }
 
   return (
+    <div className='border bg-violet-100 border-gray-300 p-6 rounded-lg shadow-md max-w-md mx-auto top-3 mt-5'>
+    <div className=' flex justify-center items-center'>
     <div className="App">
+      <div className='text-red-600 text-3xl pl-9 ml-2'>
      <h1> Todo App</h1>
-     <TodoForm addTodo={addTodo}/>
+     </div>
+     <br/>
+     <div >
+     <TodoForm addTodo={addTodo}/></div>
+     <br/>
      <TodoList todos={todos} toggleComplete={toggleComplete}/>
-    </div>
+    </div></div></div>
   );
 }
 

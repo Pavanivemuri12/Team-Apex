@@ -19,11 +19,15 @@ export const TodoForm: React.FC<TodoFormProps> = ({addTodo}) =>{
     }
 
     return(
-        <form className="todo-form">
+        <form className="todo-form flex flex-row gap-3">
+            <div className='outline-none focus:outline focus:outline-0 focus:outline-blue-600 border border-spacing-0 border-green-500 p-2 rounded transition'>
             <input type="text" value={newTodo} className="todo-input" placeholder = "Add a todo" onChange={handleChange}/>
-            <button type="submit" className='todo-button' onClick={handleSubmit}>
+            </div>
+            <div className='outline-none focus:outline focus:outline-2 focus:outline-blue-500 bg-green-400 border border-green-600 hover:text-white hover:bg-green-700 p-2 rounded transition'>
+            <button type="submit" className='todo-button' onClick={handleSubmit} >
                 Add a Todo
             </button>
+            </div>
         </form>
     )
 }
