@@ -9,4 +9,6 @@ class component
 onclick,onchange
 hooks like useState,useEffect in react and started the basics of NEXTJS
 *in next js we use SSR(Server Side Rendering) unlike react. React uses CSR(Client Side Rendering)
-next js contains routing concept on its own where as in react we manually download a package called ract router dom for outing purpose
+next js contains routing concept on its own where as in react we manually download a package called react router dom for routing purpose
+Advantage:Fast intial load
+Disadvantage:Excess Load on server
