@@ -1,0 +1,6 @@
+Caching: storing data somewhere that is faster to access
+     rendering    
+    /         \
+client-side  server-side
+              /        \
+static (at build time)  Dynamic(at request time)
