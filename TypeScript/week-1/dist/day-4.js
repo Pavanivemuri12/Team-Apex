@@ -17,4 +17,9 @@ const employeee = {
     employeeId: 562
 };
 console.log(employeee);
+const obj = { x: 10, y: 20 };
+obj.x = 30;
+const readonlyObj = { x: 10, y: 20 };
+const user1 = { name: "pavani" };
+const user2 = { name: "pavani", age: 20 };
 //# sourceMappingURL=day-4.js.map

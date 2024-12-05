@@ -11,12 +11,14 @@ const UsersPage = async () => {
   return (
     
     <>
+          <div className='bg-purple-400 min-h-screen'>
     <div className='p-[1rem]'>UsersPage</div>
     <h1>Users</h1>
     <p>{new Date().toLocaleTimeString()}</p>
     <ul>
       {users.map(user => <li key={user.id}>{user.name}</li> )}
     </ul>
+    </div>
     </>
   )
 }

@@ -8,13 +8,13 @@ interface PageProps {
 }
 
 // Define the component
-const Page: FC<PageProps> = ({ params }) => {
+const Page: FC<PageProps> = ({ params }) =>  {
   console.log("Getting dynamic values:", params);
   
   return (
     <div>
       <h1>Dynamic Page</h1>
-      <p>Username is:{params.username}</p>
+      <p>Username is Dynamic Rounting:{params.username[0]}, Firstname:{params.username[1]},lastName:{params.username[2]}</p>
 
     </div>
   );

@@ -1,13 +1,19 @@
+import React from 'react'
 
-import Link from 'next/link'
-
-export default function Home() {
+const Heade = () => {
   return (
-    <div className="p-[1rem]">
-   <main><h1>Hello World!</h1>
-   <Link href="/DAY-1">Users</Link>
-   </main>
-
-   </div>
-  );
+    <>
+    <body className="bg-purple-400 min-h-screen">
+    
+    <br></br>
+    <div className='flex flex-row gap-7'>
+   Hello! Welcome to  NextJs
+  
+    </div>
+   
+    </body>
+    </>
+  )
 }
+
+export default Heade
