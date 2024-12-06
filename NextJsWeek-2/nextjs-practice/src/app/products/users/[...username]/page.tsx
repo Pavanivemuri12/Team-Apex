@@ -1,21 +1,22 @@
-import { FC } from 'react';
+import React from 'react';
 
 // Define the type for the `params` prop
-interface PageProps {
-  params: {
-    [key: string]: string; // Dynamic keys with string values
-  };
-}
+// interface PageProps {
+//   params: {
+//     username: string[]; // Ensure `username` is an array of strings
+//   };
+// }
 
 // Define the component
-const Page: FC<PageProps> = ({ params }) =>  {
-  console.log("Getting dynamic values:", params);
-  
+const Page=()=>{
+  console.log("Getting dynamic values:");
+
   return (
     <div>
       <h1>Dynamic Page</h1>
-      <p>Username is Dynamic Rounting:{params.username[0]}, Firstname:{params.username[1]},lastName:{params.username[2]}</p>
-
+      {/* <p>
+        Username is Dynamic Routing: {params.username[0]}, Firstname: {params.username[1]}, Lastname: {params.username[2]}
+      </p> */}
     </div>
   );
 };
