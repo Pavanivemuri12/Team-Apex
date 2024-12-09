@@ -57,3 +57,19 @@ export async function PUT(request:Request):Promise<NextResponse>{
         console.error("Error updating mobile:", error);
         return NextResponse.json({ error: "Failed to update mobile" }, { status: 500 });
     }}
+
+    export async function DELETE(request:Request):Promise<NextResponse>{
+        try {
+            await dbConnection();
+            const url = new URL(request.url);
+            const mobileId= await url.searchParams.get("id");
+            if (!mobileId) {
+                return NextResponse.json({ error: "Mobile ID is required" }, { status: 400 });
+            }
+            await MobileModel.findByIdAndDelete(mobileId)
+            return NextResponse.json({msg : 'mobile product deleted successfully'})
+        } catch (error) {
+            console.error("Error updating mobile:", error);
+            return NextResponse.json({ error: "Failed to deleting mobile" }, { status: 500 });
+        }
+    }
