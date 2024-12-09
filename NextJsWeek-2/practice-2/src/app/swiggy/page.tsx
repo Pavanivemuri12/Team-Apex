@@ -22,7 +22,7 @@ const page = async()=>{
 
     const data:VendorResponse = await sampleData()
     const vendors:Vendor[] = data.vendors
-    console.log("checking for sampledata2", data)
+    // console.log("checking for sampledata2", data)
 
     const imageBaseUrl = "https://backend-nodejs-suby.onrender.com/uploads/"
 
