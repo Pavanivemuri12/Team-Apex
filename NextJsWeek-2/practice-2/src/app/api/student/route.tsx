@@ -1,4 +1,4 @@
-import { DBConnection } from "@/app/utils/config/db";
+import DBConnection from "../../utils/config/db";
 import { NextResponse } from "next/server";
 
 const ConnectDB = async():Promise<void>=>{

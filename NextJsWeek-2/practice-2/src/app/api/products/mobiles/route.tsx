@@ -1,18 +1,24 @@
-import dbConnection from "../../../utils/config/db"
+import DBConnection from "../../../utils/config/db"
 import MobileModel from "@/app/utils/models/mobile";
 
 import { NextResponse } from "next/server";
 
 
-export async function GET(): Promise<NextResponse>{
-    const mobileData = await MobileModel.find({})
-    return NextResponse.json({mobileData})
+export async function GET(): Promise<NextResponse> {
+    try {
+        await DBConnection(); // Ensure database connection is established
+        const mobileData = await MobileModel.find({});
+        return NextResponse.json({ mobileData });
+    } catch (error) {
+        console.error("Error fetching mobile data:", error);
+        return NextResponse.json({ error: "Failed to fetch mobile data" }, { status: 500 });
+    }
 }
 
 export async function POST(request: Request): Promise<NextResponse> {
     try {
         // Connect to the database
-        await dbConnection();
+        await DBConnection();
 
         // Parse request body
         const { title, devicemodel, price }: { title: string; devicemodel: string; price: string } = await request.json();
@@ -34,7 +40,7 @@ export async function POST(request: Request): Promise<NextResponse> {
 export async function PUT(request:Request):Promise<NextResponse>{
     try {
       
-        await dbConnection();
+        await DBConnection();
         const url = new URL(request.url); // Create a URL object from the request's URL
         const mobileId = url.searchParams.get("id");
         if (!mobileId) {
@@ -60,7 +66,7 @@ export async function PUT(request:Request):Promise<NextResponse>{
 
     export async function DELETE(request:Request):Promise<NextResponse>{
         try {
-            await dbConnection();
+            await DBConnection();
             const url = new URL(request.url);
             const mobileId= await url.searchParams.get("id");
             if (!mobileId) {
