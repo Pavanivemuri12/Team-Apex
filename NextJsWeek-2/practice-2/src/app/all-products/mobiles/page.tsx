@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react'
 
 
@@ -37,6 +38,8 @@ const Page = () => {
             <th className="border border-gray-300 px-4 py-2">Title</th>
             <th className="border border-gray-300 px-4 py-2">Model</th>
             <th className="border border-gray-300 px-4 py-2">Price</th>
+            <th className="border border-gray-300 px-4 py-2">Actions</th>
+            <th className="border border-gray-300 px-4 py-2">Actions</th>
                 </tr>
               
             </thead>
@@ -48,6 +51,18 @@ const Page = () => {
                         <td>{item.title}</td>
                         <td>{item.devicemodel}</td>
                         <td>{item.price}</td>
+                        <td className='flex justify-center items-center text-center align-middle'>
+                           <Link href={`/all-products/mobiles/${item._id}`}>
+                            <button className=' bg-green-400 hover:bg-green-500'>
+                               Update 
+                            </button>
+                            </Link>
+                        </td>
+                        <td className=' text-center align-middle'>
+                            <button className='bg-red-400 hover:bg-red-600'>
+                               Delete 
+                            </button>
+                        </td>
 
                     </tr>
                 )
