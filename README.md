@@ -10,4 +10,6 @@ API Concept in nextjs
 
 
 PUT & DELETE integration 
-![Uploading Screenshot 2024-12-14 163433.png…]()
+
+![Screenshot 2024-12-14 163433](https://github.com/user-attachments/assets/2945289e-d0e4-4609-86e6-b8e16cdd3f87)
+
