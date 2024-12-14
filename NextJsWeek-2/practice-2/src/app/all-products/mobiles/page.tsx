@@ -29,6 +29,24 @@ const Page = () => {
     useEffect(()=>{
         ProductHandler()
     },[])
+
+    const productDeleteHandler = async(productId:string)=>
+    {
+        console.log("dynamic id", productId)
+        const response =await fetch(`http://localhost:3000/api/products/mobiles?id=${productId}`,
+            {
+                method: 'DELETE'
+
+            })
+            const result = await response.json()
+            console.log("product deleted:",result)
+            setMobiles(mobiles.filter((item)=>item._id !== productId))
+            alert("Product Deleted Successsfully")
+    }
+
+
+
+
   return (
     <div className='p-4'>
         <table className='table-auto border-collapse border border-gray-300 w-full'>
@@ -59,7 +77,7 @@ const Page = () => {
                             </Link>
                         </td>
                         <td className=' text-center align-middle'>
-                            <button className='bg-red-400 hover:bg-red-600'>
+                            <button onClick={()=>productDeleteHandler(item._id)} className='bg-red-400 hover:bg-red-600'>
                                Delete 
                             </button>
                         </td>
