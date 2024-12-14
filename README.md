@@ -7,3 +7,9 @@ API Concept in nextjs
 
 
 ![Screenshot 2024-12-12 231407](https://github.com/user-attachments/assets/b7306a15-8d9f-4380-bb44-10c3fe51de78)
+
+
+PUT & DELETE integration 
+
+![Screenshot 2024-12-14 163433](https://github.com/user-attachments/assets/2945289e-d0e4-4609-86e6-b8e16cdd3f87)
+
