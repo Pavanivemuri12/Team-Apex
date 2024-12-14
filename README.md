@@ -13,3 +13,9 @@ PUT & DELETE integration
 
 ![Screenshot 2024-12-14 163433](https://github.com/user-attachments/assets/2945289e-d0e4-4609-86e6-b8e16cdd3f87)
 
+NEXT-Auth authentication using GitHub account
+
+![Screenshot 2024-12-14 191307](https://github.com/user-attachments/assets/b83f883b-e52f-4522-b020-ae2c89239556)
+
+![Screenshot 2024-12-14 201833](https://github.com/user-attachments/assets/373949f4-6fb3-4197-866c-2e39da917e9e)
+
