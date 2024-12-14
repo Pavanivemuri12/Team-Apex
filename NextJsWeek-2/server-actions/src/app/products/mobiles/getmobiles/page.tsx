@@ -20,9 +20,9 @@ export default async function MobileProducts():Promise<React.JSX.Element>{
         {allMobiles.map((item)=>{
             return(
                  <div key={item._id}>
-                    <div>{item.title}</div>
-                    <div>{item.devicemodel}</div>
-                    <div>{item.price}</div>
+                    <div>Mobile Name:{item.title}</div>
+                    <div>Model:{item.devicemodel}</div>
+                    <div>Price:{item.price}</div>
                     <hr/>
                  </div> 
       )  })}
