@@ -19,3 +19,14 @@ NEXT-Auth authentication using GitHub account
 
 ![Screenshot 2024-12-14 201833](https://github.com/user-attachments/assets/373949f4-6fb3-4197-866c-2e39da917e9e)
 
+NEXT-Auth authentication using Google account
+
+![Screenshot 2024-12-14 220925](https://github.com/user-attachments/assets/3f32a952-2d8c-4070-86e5-5561114f4c91)
+
+![Screenshot 2024-12-14 220935](https://github.com/user-attachments/assets/0825d73c-3ff1-4984-83c0-019ca45d6643)
+
+![Screenshot 2024-12-14 221346](https://github.com/user-attachments/assets/fc79020a-fdb5-4bb4-8a5f-f0e70fba016d)
+
+![Screenshot 2024-12-14 221352](https://github.com/user-attachments/assets/32adac3c-2392-48b1-86d1-302a67ea03d9)
+
+
