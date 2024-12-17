@@ -1,0 +1,56 @@
+In Next.js, getServerSideProps (Server-Side Rendering) and getStaticProps (Static Site Generation) are two methods that allow you to pre-render pages on the server without using APIs.
+
+Here are some key aspects of server actions without APIs in Next.js:
+
+*Server-Side Rendering (SSR) with getServerSideProps*
+
+- Runs on each request.
+- Allows you to access server-side data, like a database.
+- Returns props to the page component.
+
+*Static Site Generation (SSG) with getStaticProps*
+
+- Runs at build time.
+- Allows you to access static data, like a JSON file.
+- Returns props to the page component.
+
+Server Actions
+
+- Introduced in Next.js 13.
+- Allows you to handle server-side requests without re-rendering the entire page.
+- Supports streaming, caching, and more.
+
+Server actions provide a more flexible and efficient way to handle server-side logic without relying on APIs. They enable you to write server-side code that can interact with your frontend, handle requests, and return responses.
+
+To get started with server actions in Next.js, you'll need to create a new file in the app directory, for example, app/server/my-action.js. Then, you can define your server action using the export keyword.
+
+
+// app/server/my-action.js
+export const GET = async () => {
+  // Handle GET request
+  return new Response('Hello from server action!');
+};
+
+
+You can then call this server action from your frontend code using the fetch API or a library like react-query.
+
+
+// app/page.js
+import { useState, useEffect } from 'react';
+
+export default function MyPage() {
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    fetch('/my-action')
+      .then(response => response.text())
+      .then(data => setMessage(data));
+  }, []);
+
+  return (
+    <div>
+      <h1>My Page</h1>
+      <p>{message}</p>
+    </div>
+  );
+}
