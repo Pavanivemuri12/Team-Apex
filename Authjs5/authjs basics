@@ -1,0 +1,2 @@
+we can install authjs using the command: npm install next-auth@beta
+this will download required node modules for auth
