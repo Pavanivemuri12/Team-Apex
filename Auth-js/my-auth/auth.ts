@@ -51,24 +51,19 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           role: user.role,
           id: user._id,
          }
-         const userData = {
-          firstName: user.firstName,
-          lastname: user.lastName,
-          email: user.email,
-          role: user.role,
-          id: user._id,
-         }
-         const userData = {
-          firstName: user.firstName,
-          lastname: user.lastName,
-          email: user.email,
-          role: user.role,
-          id: user._id,
-         }
+        
 
          return userData;
       }
 
     })
   ],
+
+  pages:{
+    signIn: "/login",
+    
+  }
+
+
+
 })

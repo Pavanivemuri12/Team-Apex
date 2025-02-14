@@ -2,17 +2,18 @@ import { Label } from "@radix-ui/react-label";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { IconBrandGithub, IconBrandGoogle } from "@tabler/icons-react";
+import { login } from "@/action/user";
 
 const Login = () => {
   return (
     <div className="mt-10 max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white border border-[#121212]  dark:bg-black">
-      <form className="my-8">
+      <form className="my-8" action={login as (formData: FormData) => void | Promise<void>}>
         <Label htmlFor="email">Email Address </Label>
         <Input
           id="email"
           placeholder="email@gmail.com"
           type="email"
-          name="name"
+          name="email"
         />
         <Label htmlFor="password">Password</Label>
         <Input
